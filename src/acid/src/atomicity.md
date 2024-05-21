@@ -9,14 +9,8 @@
 - life goes on and nothing happened ???
 - rollback entire transaction???
 #### well based on  what you learn, if the chain of the query of the transaction failed, well the whole transaction unit failed.
-think about it, what is the point if queries of the transaction which are supposed to be a unit, fail and still committed and continue?
-#### It should be like 0 or 1, or all the queries gonna succeed or NOTHING gonna execute (nor effect) among the queries of that transaction. just like the atom.
-#### so what do you think about what should happen if one single query failed in like 20 queries or some failure happend in middle of transaction?
-- life goes on and nothing happend???
-- rollback entire transaction???
-#### well base on  what you learn, if the chain of query of the transaction failed, well the whole transaction unit is failed.
 think about it what is the point if queries of the transaction which supposed to be a unit failed and still he successful parts of transaction commit and continue **this cause inconsistency !!!**?
-#### Its should be like 0 or 1, or all the queries gonna succeed or NOTHING gonna execute (nor effect) among the queries  of that transaction. just like atom i think so.
+#### It should be like 0 or 1, or all the queries gonna succeed or NOTHING gonna execute (nor effect) among the queries of that transaction. just like the atom.
 
 ##  Atomicity Visualization
 
