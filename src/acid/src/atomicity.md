@@ -1,15 +1,16 @@
 # Atomicity
-### as you know what is transaction; its looked as a unit of logic
-- the transaction have some query in it.
-- the queries can be related to each other or not
-- regardless, all of the query have one logically goal that the programmer defined it base on the business logic of project
+### as you know transaction is looked at as a unit of logic
+
+- the transaction has some queries in it.
+- the queries can be related to each other or not.
+- regardless, all of the queries (in transaction) have one logical goal which is the  (programmer-defined) based on the business logic of the project.
 
 #### so what do you think about what should happen if one single query failed in like 20 queries?
-- life goes on and nothing happend???
+- life goes on and nothing happened ???
 - rollback entire transaction???
-#### well base on  what you learn, if the chain of query of the transaction failed, well the whole transaction unit is failed.
-think about it what is the point if queries of the transaction which supposed to be a unit failed and still transaction commit and continue?
-#### Its should be like 0 or 1, or all the queries gonna succeed or NOTHING gonna execute (nor effect) among the queries  of that transaction. just like atom i think so.
+#### well based on  what you learn, if the chain of the query of the transaction failed, well the whole transaction unit failed.
+think about it, what is the point if queries of the transaction which are supposed to be a unit, fail and still committed and continue?
+#### It should be like 0 or 1, or all the queries gonna succeed or NOTHING gonna execute (nor effect) among the queries of that transaction. just like the atom.
 
 
 
