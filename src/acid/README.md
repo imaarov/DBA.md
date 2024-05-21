@@ -2,7 +2,7 @@
 ### ACID (*Atomicity*, *Consistency*, *Isolation* and *Durability*)
 ACID is a collection of standards that applied to database operation like **[transaction](#)** that guarantee reliability and integrity.
 ## Properties
-- ### [Atomicity](#)
+- ### [Atomicity](https://github.com/imaarov/DBA.md/blob/main/src/acid/src/atomicity.md)
 -  ### [Consistency](#)
 -  ### [Isolation](#)
 -  ### [Durability](#)
