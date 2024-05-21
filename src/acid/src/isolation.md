@@ -24,7 +24,7 @@ after all levels well you know what cause that; ofcourse another concurrent tran
 
 - ## Isolation levels (+ sql commnad)
 -  ### Read uncommitted: 
-- - - #### allow to see other uncommitted change from your transaction
+- - #### allow to see other uncommitted change from your transaction
 - - #### completly without isolation
 - - #### its the lowest level
 - ### Read committed:
