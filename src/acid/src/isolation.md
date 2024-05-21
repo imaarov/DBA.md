@@ -1,26 +1,26 @@
 # Isolation
-### In the meantime that your transaction is running other transactions may accure and run concurrently,well are you ready for having a stateless data in your transaction or not?
-- usually you don't want read phenomena in your transaction.
-- if your state in your transaction can or will manipulate you may think that you will get unwanted results.
-- **its all about concurrent transaction that can ruined your transaction result**
+### In the meantime that your transaction is running other transactions may accrue and run concurrently, well are you ready for having stateless data in your transaction or not?
+- usually, you don't want to read phenomena in your transaction.
+- if the state of your transaction can or will be manipulated you may think that you will get unwanted results.
+- **It is all about concurrent transactions that can ruin your transaction result**
 
 ### read phenomena in detail:
 
 - #### dirty read or read phenomena
-this can happen while you reading a row or anything from your database in your transaction (this is first transaction) that another transaction (the second one) created that, **the other transaction that create the row or whatever its still in middle of its own transaction and its not committed yet !!!**
-so the data in first transaction its completly reliable on the other transaction that cause the creation
-this mean the data can deleted (rollback situation happen in second transaction)
+this can happen while you reading a row or anything from your database in your transaction (this is the first transaction) that another transaction (the second one) created that, **the other transaction that created the row is still in the middle of its own transaction and it has not committed yet !!!**
+so the data in the first transaction is completely reliable in the other transaction causing the creation,
+this means the data can be deleted (a rollback situation happens in the second transaction)
 - ### non-repeatable reads
- when you read the same value in database multiple time **but in the middle of the this two reading first value get change** .    
- - its can be the case that you read the property and then you read that again indirectly
- - its rare but you can have duplicate or same alike query in your transaction
+ when you read the same value in the database multiple times **but in the middle of these two readings first value gets changed**.    
+ - it can be the case that you read the property and then you read that again indirectly
+ - it's rare but you can have a duplicate or the same query in your transaction
 - ### phantom reads
-when you read some rows in db in a transaction like you getting a range in db and you make it again later in that transaction but like others examples the second one is different from first one, as you can think another concurent transaction made that change and that change is adding some row in that range.
-- you may think that the past one and current isolation level are the same kinda; well that what i have that problem but they are **not** ofcourse.
+when you read some rows in db in a transaction like you getting a range in db and you make it again later in that transaction but like others example the second one is different from the first one, as you can think another concurrent transaction made that change and that change is adding some row in that range.
+- you may think that the previous and current isolation levels are the same kinda; well that's why I have that problem but they are **not** of course.
 - ### Lost updates
-when you write something in the middle of your transaction (and you didnt commit that like all the other levels) and after that you read it again
-i think you should know better by now that the data is change its lost what you wrote
-after all levels well you know what cause that; ofcourse another concurrent transaction change or delete what you just write in transaction and now its gone
+when you write something in the middle of your transaction (and you didn't commit that like all the other levels) and after that you read it again
+I think you should know better by now that the data has changed it lost what you wrote
+after all levels well you know what caused that; of course another concurrent transaction changes or deletes what you just wrote in the transaction and now it's gone.
 
 - ## Isolation levels (+ sql commnad)
 -  ### Read uncommitted: 
