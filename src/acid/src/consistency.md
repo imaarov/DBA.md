@@ -23,16 +23,9 @@ so they have to be sync to each other
 the case of inconsistency here its you update something in one of the worker database and read from other one 
 in that case you may encounter the eventual consistency situation or in other word temporary unconsitency
 
+## Consistency Visualization
 
-
-
-
-
-## Consistency
-
-**Definition**: Consistency ensures that a transaction brings the database from one valid state to another, maintaining all defined rules and constraints.
-
-### Example Scenario
+### Scenario
 
 1. **Initial State**:
     - Account A: $100
@@ -60,13 +53,9 @@ Initial State Intermediate State Final State Account A: $100 -> Account A: $50 -
 
 ---
 
-### Eventual Consistency
+### Eventual Consistency Visualization
 
-## Eventual Consistency
-
-**Definition**: Eventual consistency guarantees that if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.
-
-### Example Scenario
+### Scenario
 
 1. **Initial State**:
     - Node 1: Account A: $100
