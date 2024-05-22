@@ -1,27 +1,27 @@
 # Consistency
-## consistency prevent the corrupt data and unwanted data in database
-- there should be rollback in case of transaction that its not qualified to be ended and have effect the data model  
-- in some case if the unqualified transaction actually executed and make the effect on the database the data will be corrupt
-- in coculution if in middle of your transaction the atomicity violated for example some query make effect and execute and others not, in result you have unconsistence data or in other word corrupted data
-- atomicity is in charge for make sure that consistency is not violated in data
+## consistency prevents corrupt data and unwanted data in the database
+- there should be a rollback in case of a transaction that is not qualified to be ended and has an effect on the data model  
+- in some cases, if the unqualified transaction is executed and has an effect on the database the data will be corrupt
+- in conclusion, if in the middle of your transaction, the atomicity is violated for example some queries make an effect and execute and others do not, as a result, you have inconsistency data or in other words corrupted data
+- atomicity is in charge of making sure that consistency is not violated in the data
 - ## consistency and corrupted data:
-we all have set of rules for our database
-in other hand the database also have some rules or constraint for itself
-the consistency guarantee that these rule shouldn't violated by anyone
-as i explain we have some types in rules and constraint
+we all have a set of rules for our database
+On the other hand, the database also has some rules or constraints for itself
+the consistency guarantees that these rules shouldn't violated by anyone
+as I explained we have some types of rules and constraint
 - data integrity constraint 
 - - like rules of foreign key primary key ...
 - business logic
-- - like you defined that the like is always greater that 0 and its positive
+- - like you defined that the like is always greater than 0 and it's positive
 
-**Now if any of above rule and constraint are violated in a transaction, well that transaction have to rollback**
-its ensure that in any circumstances in crash errors and others, the data model remain reliable and integrity of data is preserved.
+**Now if any of the above rules and constraints are violated in a transaction, well that transaction has to rollback**
+It ensures that in any circumstances in crash errors and others, the data model remains reliable and the integrity of data is preserved.
 - ## eventual consistency:
-### its when you have distributed system of db and the syncing between each other db worker can result a unconsitency (eventual consistency because we assume that its going to be sync)  
-its can be the case that you have replicates database worker and also a main one 
-so they have to be sync to each other 
-the case of inconsistency here its you update something in one of the worker database and read from other one 
-in that case you may encounter the eventual consistency situation or in other word temporary unconsitency
+### when you have a distributed system of db and the syncing between each other db worker can result in inconsistency (eventual consistency because we assume that it's going to be synced)  
+It can be the case that you have a replicate database worker and also a main one 
+so they have to be synced to each other 
+the case of inconsistency here is that you update something in one of the worker databases and read from another one 
+in that case, you may encounter the eventual consistency situation or in other words temporary inconsistency
 
 ## Consistency Visualization
 
