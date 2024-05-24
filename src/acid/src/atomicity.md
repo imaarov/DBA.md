@@ -47,4 +47,5 @@ graph LR
   C --> D[Transaction Fails]
   D --> E[Rollback Changes]
   E --> F[Transaction Aborted]
-
+```
+### [Back to ACID](https://github.com/imaarov/DBA.md/tree/main/src/acid)
