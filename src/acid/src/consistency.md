@@ -3,7 +3,7 @@
 - there should be a rollback in case of a transaction that is not qualified to be ended and has an effect on the data model  
 - in some cases, if the unqualified transaction is executed and has an effect on the database the data will be corrupt
 - in conclusion, if in the middle of your transaction, the atomicity is violated for example some queries make an effect and execute and others do not, as a result, you have inconsistency data or in other words corrupted data
-- atomicity is in charge of making sure that consistency is not violated in the data
+- atomicity and isolation is in charge of making sure that consistency is not violated in the data
 - ## consistency and corrupted data:
 we all have a set of rules for our database
 On the other hand, the database also has some rules or constraints for itself
