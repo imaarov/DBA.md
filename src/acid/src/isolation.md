@@ -227,3 +227,5 @@ after all levels well you know what caused that; of course another concurrent tr
 
 - **Overwritten Changes**
 - **Data Integrity Issues**
+
+### [Back to ACID](https://github.com/imaarov/DBA.md/tree/main/src/acid)
