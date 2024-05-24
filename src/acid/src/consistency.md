@@ -91,3 +91,6 @@ Initial State Update on Node 1 Propagation Final State
 | **Node 2**          | Account A: $100          | Account A: $100           | Account A: $100            | Account A: $50             |
 
 - Temporary inconsistency is resolved, achieving eventual consistency.
+
+
+### [Back to ACID](https://github.com/imaarov/DBA.md/tree/main/src/acid)
