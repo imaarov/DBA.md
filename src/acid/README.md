@@ -5,4 +5,4 @@ ACID is a collection of standards that applied to database operation like **[tra
 - ### [Atomicity](https://github.com/imaarov/DBA.md/blob/main/src/acid/src/atomicity.md)
 -  ### [Consistency](https://github.com/imaarov/DBA.md/blob/main/src/acid/src/consistency.md)
 -  ### [Isolation](https://github.com/imaarov/DBA.md/blob/main/src/acid/src/isolation.md)
--  ### [Durability](#)
+-  ### [Durability](https://github.com/imaarov/DBA.md/blob/main/src/acid/src/durability.md)
