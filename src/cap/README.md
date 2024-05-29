@@ -5,5 +5,5 @@
 ### NOTE: its better to have the hand on databases system topics and have strong knowledge in database management and database principles, its not a beginer topic.
 
 ## Properties
-- ### [Consistency](https://github.com/imaarov/DBA.md/blob/main/src/cap/src/01-consistency.md)
+- ### [Consistency](https://github.com/imaarov/DBA.md/blob/main/src/cap/src/0-consistency.md)
 
