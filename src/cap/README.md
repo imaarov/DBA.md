@@ -4,7 +4,7 @@
 ## Introduction
 The CAP theorem, also known as Brewer's theorem, is a fundamental principle that applies to distributed databases.The theorem states that in the presence of a network partition, a distributed database system can only guarantee two out of the following three properties:
 
-1. **Consistency** ( C )
+1. [**Consistency** ( C )](src/0-consistency.md)
 2. **Availability** ( A )
 3. **Partition Tolerance** ( P )
 
